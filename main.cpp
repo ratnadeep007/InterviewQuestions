@@ -2,6 +2,7 @@
 
 #include "arrayProblems/longestSubArrayBySum.h"
 #include "dymaicProblems/fibonacci.h"
+#include "arrayProblems/maxConsecutiveSum2.h"
 
 int main() {
 // Driver for array relate problems
@@ -11,7 +12,11 @@ int main() {
 //    std::vector<int> arr = longestSubArrayBySumSlidingWindow(arr1, 13, sum);
 //    std::cout << arr[0] << " and " << arr[1] << "\n";
 
+    int arr[8] = {-2, -3, 4, -1, -2, 1, 5, -3};\
+    int result = maxContiguousSubarraySumKadane(arr, 8);
+    std::cout << result << "\n";
+
 //    std::cout << fibHashmap(6) << "\n";
-    std::cout << fibHashmap(45) << "\n";
-    return 0;
+//    std::cout << fibHashmap(45) << "\n";
+//    return 0;
 }
