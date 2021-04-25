@@ -3,4 +3,11 @@ project(Interview)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Interview main.cpp arrayProblems/sumOfTwoArrayElement.cpp arrayProblems/sumOfTwoArrayElement.h arrayProblems/longestSubArrayBySum.cpp arrayProblems/longestSubArrayBySum.h dymaicProblems/fibonacci.cpp dymaicProblems/fibonacci.h arrayProblems/maxConsecutiveSum2.h arrayProblems/maxConsecutiveSum2.cpp dymaicProblems/gridTraveler.cpp dymaicProblems/gridTraveler.h)
+file(GLOB dynamicProblemsSrc "dynamicProblems/*.h" "dymaicProblems/*.cpp")
+file(GLOB arrayProblemsSrc "arrayProblems/*.h" "arrayProblems/*.cpp")
+file(GLOB utilsSrc "utils/*.h" "utils/*.cpp")
+
+add_executable(Interview main.cpp
+        ${dynamicProblemsSrc}
+        ${arrayProblemsSrc}
+        ${utilsSrc})

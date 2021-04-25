@@ -4,6 +4,8 @@
 #include "dymaicProblems/fibonacci.h"
 #include "arrayProblems/maxConsecutiveSum2.h"
 #include "dymaicProblems/gridTraveler.h"
+#include "arrayProblems/sortedSquaredArray.h"
+#include "utils/arrayRelated.h"
 
 int main() {
 // Driver for array relate problems
@@ -21,5 +23,8 @@ int main() {
 //    std::cout << fibHashmap(45) << "\n";
 //    return 0;
 
-    std::cout << gridTravelerMemo(18, 18);
+//    std::cout << gridTravelerMemo(18, 18);
+    std::vector<int> input = {-6, -4, 1, 2, 3, 5};
+    std::vector<int> result = sortedSquaredArrayOptimized(input);
+    printIntVector(result);
 }
