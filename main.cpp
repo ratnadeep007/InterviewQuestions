@@ -6,6 +6,7 @@
 #include "dymaicProblems/gridTraveler.h"
 #include "arrayProblems/sortedSquaredArray.h"
 #include "utils/arrayRelated.h"
+#include "matrixProblem/rotateImage.h"
 
 int main() {
 // Driver for array relate problems
@@ -24,7 +25,13 @@ int main() {
 //    return 0;
 
 //    std::cout << gridTravelerMemo(18, 18);
-    std::vector<int> input = {-6, -4, 1, 2, 3, 5};
-    std::vector<int> result = sortedSquaredArrayOptimized(input);
-    printIntVector(result);
+//    std::vector<int> input = {-6, -4, 1, 2, 3, 5};
+//    std::vector<int> result = sortedSquaredArrayOptimized(input);
+//    printIntVector(result);
+    std::vector<std::vector<int>> input{{ 1,  2,  3,  4},
+                                        { 5,  6,  7,  8},
+                                        { 9, 10, 11, 12},
+                                        {13, 14, 15, 16}};
+    std::vector<std::vector<int>> result = rotateImage(input);
+    printIntVectorMatrix(result);
 }

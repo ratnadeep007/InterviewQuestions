@@ -6,8 +6,10 @@ set(CMAKE_CXX_STANDARD 14)
 file(GLOB dynamicProblemsSrc "dynamicProblems/*.h" "dymaicProblems/*.cpp")
 file(GLOB arrayProblemsSrc "arrayProblems/*.h" "arrayProblems/*.cpp")
 file(GLOB utilsSrc "utils/*.h" "utils/*.cpp")
+file(GLOB matrixProblemSrc "matrixProblem/*.h" "matrixProblem/*.cpp")
 
 add_executable(Interview main.cpp
         ${dynamicProblemsSrc}
         ${arrayProblemsSrc}
-        ${utilsSrc})
+        ${utilsSrc}
+        ${matrixProblemSrc})
