@@ -7,6 +7,7 @@
 #include "arrayProblems/sortedSquaredArray.h"
 #include "utils/arrayRelated.h"
 #include "matrixProblem/rotateImage.h"
+#include "arrayProblems/firstDuplicate.h"
 
 int main() {
 // Driver for array relate problems
@@ -28,10 +29,16 @@ int main() {
 //    std::vector<int> input = {-6, -4, 1, 2, 3, 5};
 //    std::vector<int> result = sortedSquaredArrayOptimized(input);
 //    printIntVector(result);
-    std::vector<std::vector<int>> input{{ 1,  2,  3,  4},
-                                        { 5,  6,  7,  8},
-                                        { 9, 10, 11, 12},
-                                        {13, 14, 15, 16}};
-    std::vector<std::vector<int>> result = rotateImage(input);
-    printIntVectorMatrix(result);
+//    std::vector<std::vector<int>> input{{ 1,  2,  3,  4},
+//                                        { 5,  6,  7,  8},
+//                                        { 9, 10, 11, 12},
+//                                        {13, 14, 15, 16}};
+//    std::vector<std::vector<int>> result = rotateImage(input);
+//    printIntVectorMatrix(result);
+
+    int arr1[] = {1, 2, 1, 2, 3, 3};
+    int arr2[] = {2, 1, 3, 5, 3, 2};
+
+    std::cout << firstDuplicate(arr1, 6) << "\n";
+    std::cout << firstDuplicate(arr2, 6) << "\n";
 }
